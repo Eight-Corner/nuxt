@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Navbar :charts="charts" @chartSelected="(chart) => selectedChart = chart"/>
+        <Navbar :charts="charts" @chartSelected="(chart) => selectedChart = chart" tag="highchart"/>
         <component :is="selectedChart.name"/>
     </div>
 </template>
